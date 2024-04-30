@@ -1,0 +1,8 @@
+.idea/
+/core/engine/logs/*
+/core/engine/runtime/*
+!/core/engine/logs/.gitkeep
+!/core/engine/runtime/.gitkeep
+node_modules/
+/config/config.php
+/web/uploads/*

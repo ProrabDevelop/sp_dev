@@ -1,0 +1,82 @@
+/*************
+  Blue Theme
+ *************/
+/* overall */
+.tablesorter-blue {
+	width: 100%;
+	background-color: #fff;
+	margin: 10px 0 15px;
+	text-align: left;
+	border-spacing: 0;
+
+}
+
+.tablesorter-blue tbody tr{
+	&:first-child{
+		td{
+			border-top: 1px solid $border_gray_color !important;
+		}
+	}
+
+
+	td{
+		border-bottom: $border_gray_color 1px solid;
+		&:first-child{
+			border-left: 1px solid $border_gray_color !important;
+		}
+		&:last-child{
+			border-right: 1px solid $border_gray_color !important;
+		}
+
+	}
+
+}
+
+
+
+/* header */
+.tablesorter-blue th,
+.tablesorter-blue thead td {
+
+}
+.tablesorter-blue tbody td,
+.tablesorter-blue tfoot th,
+.tablesorter-blue tfoot td {
+	padding: 4px;
+	vertical-align: top;
+}
+.tablesorter-blue .header,
+.tablesorter-blue .tablesorter-header {
+	background-image: url('../img/icons/table_arrows_default.svg');
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding: 4px 18px 4px 4px;
+	white-space: normal;
+	cursor: pointer;
+}
+.tablesorter-blue .headerSortUp,
+.tablesorter-blue .tablesorter-headerSortUp,
+.tablesorter-blue .tablesorter-headerAsc {
+	background-image: url('../img/icons/table_arrows_asc.svg');
+}
+.tablesorter-blue .headerSortDown,
+.tablesorter-blue .tablesorter-headerSortDown,
+.tablesorter-blue .tablesorter-headerDesc {
+	background-image: url('../img/icons/table_arrows_desc.svg');
+}
+.tablesorter-blue thead .sorter-false {
+	background-image: none;
+	cursor: default;
+	padding: 4px;
+}
+
+/* tfoot */
+.tablesorter-blue tfoot .tablesorter-headerSortUp,
+.tablesorter-blue tfoot .tablesorter-headerSortDown,
+.tablesorter-blue tfoot .tablesorter-headerAsc,
+.tablesorter-blue tfoot .tablesorter-headerDesc {
+	/* remove sort arrows from footer */
+	background-image: none;
+}
+
+

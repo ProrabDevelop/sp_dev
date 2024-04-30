@@ -1,0 +1,132 @@
+html, body{
+  height: 100%;
+  min-height: 100%;
+}
+
+#app, #all-page{
+  height: 100%;
+  min-height: 100%;
+}
+
+.auth{
+  height: 100%;
+  .container{
+    height: 100%;
+    .row{
+      height: 100%;
+    }
+  }
+  .auth_form{
+    width: 100%;
+  }
+}
+
+
+#app{
+  padding-top: 60px;
+  @media (min-width: 750px){
+    padding-top: 0;
+  }
+}
+
+//menu!!!!!!
+
+.mobile_menu_header{
+
+  @media (min-width: 750px){
+    display: none;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+
+  height: 50px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+.mm-wrapper_sidebar-closed{
+  .mm-menu{
+    max-width: 50px !important;
+    overflow: hidden !important;
+  }
+}
+
+
+//notyfy
+
+.notification_wrap {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  right: 15px;
+  max-width: 400px;
+  z-index: 10000;
+}
+.notification_wrap .notification_item {
+  overflow: hidden;
+  padding: 10px 15px 10px;
+  margin-bottom: 15px;
+  background: #e8e8e8;
+  border-radius: 5px;
+  box-shadow: #000 0 0 7px -2px; }
+.notification_wrap .notification_item .title {
+  position: relative;
+  width: calc(100% + 30px);
+  margin-top: -10px;
+  margin-left: -15px;
+  margin-bottom: 10px;
+  padding: 7px 15px;
+  background: #b7b7b7;
+  color: #191919; }
+.notification_wrap .notification_item .title .close_informer {
+  transition: 0.3s;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 0;
+  top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #191919; }
+
+.notification_item{
+  .content{
+    padding: 0 !important;
+  }
+}
+
+.notification_wrap .notification_item .title .close_informer:hover {
+  color: #666666; }
+.notification_wrap .notification_item .title.success {
+  background: #2196F3;
+  color: #f0f0f0; }
+.notification_wrap .notification_item .title.success .close_informer {
+  color: #0078de; }
+.notification_wrap .notification_item .title.success .close_informer:hover {
+  color: white; }
+.notification_wrap .notification_item .title.error {
+  background: #940000;
+  color: #f0f0f0; }
+.notification_wrap .notification_item .title.error .close_informer {
+  color: #560005; }
+.notification_wrap .notification_item .title.error .close_informer:hover {
+  color: white; }
+.notification_wrap .notification_item .content {
+  font-size: 14px; }
+
+
+

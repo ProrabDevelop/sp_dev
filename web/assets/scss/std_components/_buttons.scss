@@ -1,0 +1,25 @@
+
+.button{
+  border: 0;
+  transition: 0.3s;
+  background: $yellow;
+  border-radius: 2px;
+  color: $black;
+  font-size: 14px;
+  line-height: 28px;
+  cursor: pointer;
+
+  @include xs{
+    border-radius: 20px;
+
+    -webkit-appearance:default-button; // ios fix
+  }
+
+  &:hover{
+    background: darken($yellow, 5%);
+  }
+
+}
+
+
+

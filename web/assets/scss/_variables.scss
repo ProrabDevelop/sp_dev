@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+$base_font: 'Onest', sans-serif;
+
+//colors
+$blue: #356AFB;
+$yellow: #FFCB46;
+
+$error_color: #FF6666;
+$disabled_field: #F2F4F6;
+
+
+$black: #252525;
+$text_muted: #676767;
+$border_gray_color: #E1E1E1;
+$bg_gray: #f2f4f6;
+
+
+//grid_settings
+$wrap_width: 1200px;
+$columns_quantity: 12;
+
+//grid_responsive
+$xs_max: 480px;
+$sm_max: 720px;
+$md_max: 1000px;
+$lg_max: 1400px;
+$lg_plus_max: 1600px;
+
+
+//inputs
+
+$field_focus_color: $blue;
+$field_border_color: $border_gray_color;
+
+$check_box_color: $yellow;
+$check_box_no_active: $border_gray_color;
+
+//hover
+
+$blue_hover: #213e94;

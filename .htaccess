@@ -1,0 +1,15 @@
+php_value session.gc_maxlifetime 172800
+php_value session.cookie_lifetime 172800
+php_value memory_limit 1024M
+
+
+RewriteEngine On
+
+#RewriteRule ^(.*)\.(gif|jpg|png|jpeg|css|js|zip)$ /web/$1.$2 [L,NC]
+
+#RewriteRule ^(.*)$ /web/$1 [L,QSA]
+
+RewriteEngine On
+RewriteRule ^(.*)$ /web/$1 [L]
+
+

@@ -1,0 +1,62 @@
+@import "variables";
+
+//debugbar
+@import "frame_components/debugbar";
+//end debugbar
+
+@import "std_components/grid";
+@import "std_components/buttons";
+@import "std_components/inputs";
+@import "std_components/svg_messages_icons_anim";
+@import "std_components/notify";
+
+
+@import "std_components/slick";
+@import "std_components/slick-theme";
+
+@import "fonts";
+
+@import "theme";
+
+@import "lp/main";
+
+
+*{
+  font-family: $base_font;
+  box-sizing: border-box;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+*:focus {
+  outline: none;
+}
+
+.muted{
+  color: $text_muted;
+}
+
+body{
+  padding: 0;
+  margin: 0 auto;
+  background: $bg_gray;
+
+  @include xs{
+    background: white;
+  }
+
+  &.landing_page{
+    background: white;
+  }
+
+}
+
+i{
+  font-size: 19px;
+}
+
+
+
+
+
+
+

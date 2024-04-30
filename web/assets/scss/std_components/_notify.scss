@@ -1,0 +1,83 @@
+//notyfy
+
+.notification_wrap {
+
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  max-width: 400px;
+  z-index: 10000;
+  width: calc(100% - 30px);
+
+  .notification_item {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 20px 15px;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 20px 20px -10px rgba(6, 25, 56, 0.21);
+
+    .title {
+      position: relative;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      width: calc(100% + 40px);
+      margin-top: -15px;
+      margin-left: -20px;
+      margin-bottom: 10px;
+      padding: 7px 15px;
+      background: #b7b7b7;
+      color: white;
+      font-size: 16px;
+
+      .close_informer {
+        color: #fff;
+        transition: 0.3s;
+        margin-right: -10px;
+
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+
+        &:hover{
+          color: #666666;
+        }
+
+      }
+
+    }
+
+    .content{
+      font-size: 16px;
+      padding: 0 !important;
+    }
+
+  }
+
+}
+
+.notification_wrap .notification_item .title.success {
+  background: $blue;
+  color: #f0f0f0; }
+.notification_wrap .notification_item .title.success .close_informer {
+  color: white; }
+.notification_wrap .notification_item .title.success .close_informer:hover {
+  color: white; }
+
+.notification_wrap .notification_item .title.error {
+  background: $error_color;
+  color: #f0f0f0; }
+.notification_wrap .notification_item .title.error .close_informer {
+  color: $error_color; }
+.notification_wrap .notification_item .title.error .close_informer:hover {
+  color: white; }
+.notification_wrap .notification_item .content {
+  font-size: 14px; }

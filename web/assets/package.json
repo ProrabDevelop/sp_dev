@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "graceful-fs": "4.2.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.9"
+  }
+}
